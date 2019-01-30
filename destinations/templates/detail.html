@@ -1,4 +1,4 @@
-{% extends "base.html" %} 
+ {% extends "base.html" %} 
 
 {% block title %}Detail{% endblock title %} 
 
@@ -9,9 +9,9 @@
     <p><img src="{{destination.pretty_picture.url}}"></p>
     <p>{{destination.optimal_visiting_season}}</p>
     <a href="{% url 'destination-update' destination.id %}">
-        <button>Update</button>
+        <button typr=button class="btn btn-outline-primary">Update</button>
     </a>
     <a href="{% url 'destination-delete' destination.id %}">
-        <button>Delete</button>
+        <button typr=button class="btn btn-outline-primary">Delete</button>
     </a>
 {% endblock content %}
